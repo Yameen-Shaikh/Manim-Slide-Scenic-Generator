@@ -1,0 +1,57 @@
+[
+  {
+    "layout": "grid",
+    "text": "Evidence in the Universe",
+    "images": ["sun.png", "dna.png", "orbit.png", "atom.png"]
+  },
+  {
+    "layout": "quote",
+    "text": "Out of nothing, nothing comes."
+  },
+  {
+    "layout": "hero",
+    "text": "Big Universe",
+    "image": "universe.png"
+  },
+
+  {
+    "layout": "hero",
+    "text": "Question?",
+    "image": "thinking.png"
+  },
+
+  {
+    "layout": "comparison",
+    "text": "Allah or Many Gods?",
+    "left_img": "allah.png",
+    "right_img": "many_gods.png"
+  },
+
+  {
+    "layout": "bullets",
+    "text": "Atheist?",
+    "image": "ahteist.png",
+    "points": [
+      "Automatic Process",
+      "No Creator",
+      "Universe is Random",
+      "No Purpose",
+      "No Meaning",
+      "No God"
+    ]
+  },
+
+  {
+    "layout": "comparison",
+    "text": "TWO GODS?",
+    "left_img": "god_a.png",
+    "right_img": "god_b.png"
+  },
+  {
+    "layout": "bullets",
+    "text": "DEFICIENCY LIST",
+    "image": "weakness.png",
+    "points": ["Needs Rest", "Needs Help", "Dependent"]
+  }
+
+]
