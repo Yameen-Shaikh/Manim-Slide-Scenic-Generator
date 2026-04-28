@@ -4,18 +4,17 @@ from manim import *
 from manim_slides import Slide
 from layouts import SlideLayouts
 from assets import AssetManager
+from animations import Animator  # New import
 
 class BasicSlide(Slide):
     def construct(self):
-        # 1. Initialize our helpers
         self.assets = AssetManager() 
-        layouts = SlideLayouts(self)
+        self.animator = Animator(self)   # Initialize animator
+        layouts = SlideLayouts(self)     # Pass self (which now has animator)
         
-        # 2. Load data
         with open('scenes.json', 'r') as f:
             scenes = json.load(f)
         
-        # 3. Define dispatch
         layout_handlers = {
             "hero": layouts.render_hero,
             "comparison": layouts.render_comparison,
@@ -25,7 +24,6 @@ class BasicSlide(Slide):
             "grid_seperate_image": layouts.render_grid_seperate_image,
         }
 
-        # 4. Execute slides
         for data in scenes:
             self.clear()
             handler = layout_handlers.get(data.get("layout"))
